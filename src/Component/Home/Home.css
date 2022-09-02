@@ -1,0 +1,110 @@
+.section {
+	padding: 5% 5%;
+}
+
+.container-1 {
+	display: flex;
+	justify-content: space-between;
+}
+
+.content-section {
+	width: 100%;
+}
+
+.content-section .title {
+	color: #183266;
+	font-size: 35px;
+	font-weight: 800;
+	padding: 3% 0;
+}
+
+.content-section .content p {
+	width: 90%;
+	font-size: 25px;
+	color: #858e9d;
+	line-height: 40px;
+}
+
+.image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	width: 100%;
+}
+.image-section img {
+	width: 100%;
+}
+
+.content-section .content .button {
+	margin-top: 7%;
+}
+
+.content-section .content .button a {
+	background-color: #183266;
+	padding: 12px 40px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 25px;
+	letter-spacing: 1.5px;
+	border-radius: 10px;
+}
+.content-section .content .button a:hover {
+	background-color: #7f8daa00;
+	color: #183266;
+	border: 2px solid #183266;
+}
+
+.content-section .social {
+	margin-top: 6%;
+}
+
+.content-section .social i {
+	/* color: #000; */
+	font-size: 40px;
+	padding: 2%;
+}
+.content-section .social i:hover {
+	color: #183266;
+}
+#instagram {
+	color: #bc2a8d;
+}
+#twitter {
+	color: #1da1f2;
+}
+#github {
+	color: black;
+}
+
+@media only screen and (max-width: 1000px) {
+	.container-1 {
+		flex-direction: column;
+	}
+
+	.content-section {
+		text-align: center;
+		width: 100%;
+	}
+
+	.content-section .title {
+		font-size: 4vh;
+	}
+
+	.content-section .content p {
+		text-align: center;
+		padding: 0%;
+		margin: 0px;
+		width: 100%;
+		font-size: 3vh;
+		margin-top: 30px;
+	}
+
+	.content-section .content .button {
+		margin-top: 50px;
+	}
+
+	.content-section .social {
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+}
