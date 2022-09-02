@@ -7,11 +7,11 @@ import Skills from './Component/Skills/Skills';
 import Contact from './Component/Contact/Contact';
 import Projects from './Component/Projects/Projects';
 import Education from './Component/Education/Education';
-import { Routes, Route, Navigate, BrowserRouter as Router } from 'react-router-dom';
+import { Routes, Route, Navigate, HashRouter as Router } from 'react-router-dom';
 
 function App() {
   return (
-    <Router basename="/new_portfolio">
+    <Router>
       <Navbar />
       <Routes>
         <Route exact path='/home' element={<Home />} />
