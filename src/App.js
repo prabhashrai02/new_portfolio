@@ -11,7 +11,7 @@ import { Routes, Route, Navigate, BrowserRouter as Router } from 'react-router-d
 
 function App() {
   return (
-    <Router>
+    <Router basename="/new_portfolio">
       <Navbar />
       <Routes>
         <Route exact path='/home' element={<Home />} />
