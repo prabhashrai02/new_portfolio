@@ -13,14 +13,14 @@
 
 .content-section .title {
 	color: #183266;
-	font-size: 35px;
+	font-size: 2rem;
 	font-weight: 800;
 	padding: 3% 0;
 }
 
 .content-section .content p {
 	width: 90%;
-	font-size: 25px;
+	font-size: 1.5rem;
 	color: #858e9d;
 	line-height: 40px;
 }
@@ -73,11 +73,45 @@
 	color: #1da1f2;
 }
 #github {
-	color: black;
+    color: black;
 }
 
-@media only screen and (max-width: 1000px) {
-	.container-1 {
+@media only screen and (max-width: 600px) {
+    .container-1 {
+        margin-top: 12vh;
+        flex-direction: column;
+    }
+
+    .content-section {
+        text-align: center;
+        width: 100%;
+    }
+
+    .content-section .title {
+        font-size: 1.3rem;
+    }
+
+    .content-section .content p {
+        text-align: center;
+        padding: 0%;
+        margin: 0px;
+        width: 100%;
+        font-size: 1.2rem;
+        margin-top: 30px;
+    }
+
+    .content-section .content .button {
+        margin-top: 50px;
+    }
+
+    .content-section .social {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
+    .container-1 {
 		flex-direction: column;
 	}
 
@@ -87,7 +121,7 @@
 	}
 
 	.content-section .title {
-		font-size: 4vh;
+		font-size: 1.5rem;
 	}
 
 	.content-section .content p {
@@ -95,7 +129,7 @@
 		padding: 0%;
 		margin: 0px;
 		width: 100%;
-		font-size: 3vh;
+		font-size: 1.4rem;
 		margin-top: 30px;
 	}
 
