@@ -1,7 +1,9 @@
+import './PlaywithMe.css';
+
 function PlaywithMe() {
     return (
       <div>
-          PlaywithMe
+          Play stone paper seciors with Prabhash
       </div>
     );
   }
