@@ -1,1 +1,16 @@
+.brand {
+    display: none;
+    position: absolute;
+    margin: 2rem 0.8rem;
+    font-size: 8vw;
+    font-family: 'Caveat', cursive;
+    
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+}
 
+@media only screen and (max-width: 600px) {
+    .brand {
+        display: block;
+    }
+}

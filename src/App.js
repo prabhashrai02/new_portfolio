@@ -12,6 +12,7 @@ import { Routes, Route, Navigate, HashRouter as Router } from 'react-router-dom'
 function App() {
   return (
     <Router>
+      <div className="brand">"See the good"</div>
       <Navbar />
       <Routes>
         <Route exact path='/home' element={<Home />} />

@@ -5,7 +5,6 @@ import { FiTwitter, FiGithub, FiInstagram } from "react-icons/fi";
 function Home() {
   return (
     <>
-    <div className="brand">Prabhash Rai</div>
       <div className="section">
         <div className="container-1">
           <div className="content-section">

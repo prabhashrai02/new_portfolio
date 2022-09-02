@@ -1,13 +1,3 @@
-.brand {
-    display: none;
-    position: absolute;
-    margin: 2rem 0.8rem;
-    font-size: 8vw;
-    font-family: "WindSong";
-    
-    letter-spacing: 0.1rem;
-    font-weight: 900;
-}
 
 .section {
 	padding: 5% 5%;
@@ -88,9 +78,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .brand {
-        display: block;
-    }
+
     .container-1 {
         margin-top: 12vh;
         flex-direction: column;
