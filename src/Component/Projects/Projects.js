@@ -13,7 +13,6 @@ function Projects() {
 
     const last = list.pop();
     list.unshift(last);
-    // return console.log(list);
 
     if (currentIndex === list.length - 1) {
       return setCurrentIndex(0);
@@ -26,7 +25,6 @@ function Projects() {
 
     const last = list.shift();
     list.push(last);
-    // return console.log(list);
 
     setCurrentIndex(currentIndex + 1);
 
@@ -38,7 +36,6 @@ function Projects() {
 
     const last = list.pop();
     list.unshift(last);
-    // return console.log(list);
 
     setCurrentIndex(currentIndex - 1);
 
@@ -55,7 +52,7 @@ function Projects() {
     <>
       project
        <div className="project_section">
-         <AiFillCaretLeft className="project_button">
+         <AiFillCaretLeft className="project_button" onClick={left}>
            left
          </AiFillCaretLeft>
          <div className='project_list'>
