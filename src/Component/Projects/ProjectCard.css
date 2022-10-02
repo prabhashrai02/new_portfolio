@@ -1,0 +1,25 @@
+.card {
+    background-color: rgb(193, 232, 244);
+    border: 2px solid black;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    width: 25vw;
+    height: 40vh;
+}
+
+.card_image {
+    width: inherit;
+    height: 60%;
+}
+
+.card_description {
+    text-align: center;
+    height: 30%;
+}
+
+.card_link {
+    margin: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+}

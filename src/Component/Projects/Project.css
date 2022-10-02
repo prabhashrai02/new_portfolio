@@ -1,0 +1,29 @@
+.project_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project_button {
+    cursor: pointer;
+    scale: 1.5;
+}
+
+.project_list {
+    position: relative;
+    margin: 0 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.active {
+    scale: 1.4;
+    z-index: 2;
+}
+
+.not-active {
+    opacity: 0.5;
+    display: none;
+}
