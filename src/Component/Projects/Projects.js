@@ -51,15 +51,18 @@ function Projects() {
   return (
     <>
        <div className="project_section">
-         <AiFillCaretUp className="project_mobile_button" onClick={left} />
-
-         <AiFillCaretLeft className="project_button" onClick={left} />
+        <div className="project_mobile_button_block" onClick={left}>
+         <AiFillCaretUp className="project_mobile_button"/>
+        </div>
+        <div className="project_button_block" onClick={left}>
+         <AiFillCaretLeft className="project_button"/>
+        </div>
          <div className='project_list'>
            {
             list.map(
               (project, index) => {
                 return (
-                  <div className={index === ((list.length-1)/2) ? 'active' : 'not-active'} key={index}>
+                  <div className={index === 1 ? 'active' : 'not-active'} key={index}>
                     {project}
                   </div>
                 )
@@ -67,9 +70,13 @@ function Projects() {
             )
           }
         </div>
-        <AiFillCaretRight className="project_button" onClick={right}/>
-
-        <AiFillCaretDown className="project_mobile_button" onClick={right}/>
+        <div className="project_button_block" onClick={right}>
+          <AiFillCaretRight className="project_button"/>
+        </div>
+        
+        <div className="project_mobile_button_block" onClick={right}>
+          <AiFillCaretDown className="project_mobile_button"/>
+        </div>
       </div>
     </>
   );

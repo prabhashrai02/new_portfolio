@@ -5,6 +5,7 @@
     cursor: pointer;
     width: 25vw;
     height: 40vh;
+    margin: 0 1.4vw;
 }
 
 .card_image {
@@ -14,7 +15,7 @@
 
 .card_description {
     text-align: center;
-    height: 30%;
+    height: 20%;
 }
 
 .card_link {
@@ -26,7 +27,8 @@
 
 @media only screen and (max-width: 600px) {
     .card {
-        width: 50vw;
-        height: 25vh;
+        margin: 1vh 0;
+        width: 22vh;
+        height: 22vh;
     }
 }

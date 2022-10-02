@@ -1,8 +1,5 @@
 .project_section {
-	padding: 5vh 5%;
-}
-
-.project_section {
+    padding: 5vh 5%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,8 +9,23 @@
     display: none;
 }
 
-.project_button {
+.project_mobile_button_block {
+    display: none;
+}
+
+.project_button_block {
+    border-radius: 0.5rem;
     cursor: pointer;
+    background-color: rgb(186, 190, 190);
+    opacity: 0.5;
+    height: 40vh;
+    width: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project_button {
     scale: 2.5;
 }
 
@@ -22,8 +34,10 @@
     margin: 0 1vw;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     height: 90vh;
+    width: 90vw;
+    overflow: hidden;
 }
 
 .active {
@@ -38,19 +52,29 @@
 @media only screen and (max-width: 600px) {
 
     .project_section {
-        padding: 12vh 5% 3.5vh;
+        padding: 14vh 5% 3.5vh;
+        flex-direction: column;
     }
 
-    .project_section {
+    .project_mobile_button_block {
+        border-radius: 0.5rem;
+        cursor: pointer;
+        background-color: rgb(186, 190, 190);
+        opacity: 0.5;
+        width: 50vw;
+        height: 2.7vh;
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
     .project_mobile_button {
-        scale: 2.5;
+        scale: 2;
         display: block;
+    }
+
+    .project_button_block {
+        display: none;
     }
 
     .project_button {
@@ -58,11 +82,9 @@
     }
 
     .project_list {
-        margin: 12vh 0;
-        display: flex;
+        margin: 1vh 0;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 55vh;
+        height: 74vh;
+        overflow: hidden;
     }
 }

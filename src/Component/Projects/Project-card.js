@@ -8,12 +8,15 @@ function Card(props) {
         <div className="card">
             <img className="card_image" src={project.image} alt=""/>
             <div className="card_description">
-                <h5>{project.name}</h5>
-                <small>{project.description}</small>
+                <h6>{project.name}</h6>
             </div>
             <div className="card_link">
-                <BsGithub rel="noreferrer" target="_blank" href={project.github_link}>github</BsGithub>
-                <FaExternalLinkAlt rel="noreferrer" target="_blank" href={project.live_link}>live</FaExternalLinkAlt>
+                <a rel="noreferrer" target="_blank" href={project.github_link}>
+                    <BsGithub>github</BsGithub>
+                </a>
+                <a rel="noreferrer" target="_blank" href={project.live_link}>
+                    <FaExternalLinkAlt>live</FaExternalLinkAlt>
+                </a>
             </div>
         </div>
     );
