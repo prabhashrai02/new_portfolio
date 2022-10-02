@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Card from './Project-card';
 import { ProjectList } from "./Project-details";
-import { AiFillCaretLeft, AiFillCaretRight } from "react-icons/ai";
+import { AiFillCaretLeft, AiFillCaretRight, AiFillCaretUp, AiFillCaretDown } from "react-icons/ai";
 import "./Project.css";
 
 let list = ProjectList.map((project, i) => <Card data={project} key={i}/>);
@@ -50,11 +50,10 @@ function Projects() {
 
   return (
     <>
-      project
        <div className="project_section">
-         <AiFillCaretLeft className="project_button" onClick={left}>
-           left
-         </AiFillCaretLeft>
+         <AiFillCaretUp className="project_mobile_button" onClick={left} />
+
+         <AiFillCaretLeft className="project_button" onClick={left} />
          <div className='project_list'>
            {
             list.map(
@@ -68,9 +67,9 @@ function Projects() {
             )
           }
         </div>
-        <AiFillCaretRight className="project_button">
-          right
-        </AiFillCaretRight>
+        <AiFillCaretRight className="project_button" onClick={right}/>
+
+        <AiFillCaretDown className="project_mobile_button" onClick={right}/>
       </div>
     </>
   );

@@ -8,8 +8,8 @@ function Card(props) {
         <div className="card">
             <img className="card_image" src={project.image} alt=""/>
             <div className="card_description">
-                <h2>{project.name}</h2>
-                <p>{project.description}</p>
+                <h5>{project.name}</h5>
+                <small>{project.description}</small>
             </div>
             <div className="card_link">
                 <BsGithub rel="noreferrer" target="_blank" href={project.github_link}>github</BsGithub>
