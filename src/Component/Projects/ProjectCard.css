@@ -7,6 +7,9 @@
     height: 20vw;
     margin: 0 1.4vw;
     transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .card:hover {

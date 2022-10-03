@@ -52,8 +52,15 @@
 }
 
 .active .card_image{
-    height: 80%;
+    width: 25vw;
+    height: 20vw;
 }
+.active .card_description {
+    margin-top: max(-5vw, -3rem);
+    height: min(5vw, 3rem);
+    background-color: rgb(206, 235, 248);
+}
+
 .not-active .card_description {
     display: none;
 } 
@@ -100,6 +107,13 @@
     }
 
     .active .card_image{
-        height: 70%;
+        width: 100%;
+        height: 78%;
+    }
+
+    .active .card_description{
+        margin-top: -12%;
+        height: 30%;
+        background-color: rgb(206, 235, 248);
     }
 }
