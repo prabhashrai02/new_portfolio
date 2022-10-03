@@ -10,10 +10,10 @@ function Card(props) {
             <div className="card_description">
                 <h6>{project.name}</h6>
                 <div className="card_link">
-                    <a rel="noreferrer" target="_blank" href={project.github_link}>
+                    <a rel="noreferrer" target="_blank" className="card_button" href={project.github_link}>
                         <BsGithub>github</BsGithub>
                     </a>
-                    <a rel="noreferrer" target="_blank" href={project.live_link}>
+                    <a rel="noreferrer" target="_blank" className="card_button" href={project.live_link}>
                         <FaExternalLinkAlt>live</FaExternalLinkAlt>
                     </a>
                 </div>
