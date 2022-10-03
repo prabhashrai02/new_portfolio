@@ -22,16 +22,24 @@ function Home() {
                       <a href="https://www.linkedin.com/in/prabhashrai02/" target="_blank" rel="noreferrer">Follow Me</a>
                   </div>
               </div>
-              <div className="social">
-                <a href="https://twitter.com/prabhashrai02" id="twitter" target="_blank" rel="noreferrer">
-                  <i><FiTwitter /></i>
-                </a>
-                <a href="https://github.com/prabhashrai02" id="github" target="_blank" rel="noreferrer">
-                  <i><FiGithub /></i>
-                </a>
-                <a href="https://instagram.com/prabhashrai02" id="instagram" target="_blank" rel="noreferrer">
-                  <i><FiInstagram /></i>  
-                </a>
+              <div className="social_container">
+                <div className="social">
+                  <a href="https://twitter.com/prabhashrai02" id="twitter" target="_blank" rel="noreferrer">
+                  <div className="follow_icon">
+                    <i><FiTwitter /></i>
+                  </div>
+                  </a>
+                  <a href="https://github.com/prabhashrai02" id="github" target="_blank" rel="noreferrer">
+                  <div className="follow_icon">
+                    <i><FiGithub /></i>
+                  </div>
+                  </a>
+                  <a href="https://instagram.com/prabhashrai02" id="instagram" target="_blank" rel="noreferrer">
+                    <div className="follow_icon">
+                      <i><FiInstagram /></i>  
+                    </div>
+                  </a>
+                </div>
               </div>
           </div>
           <div className="image-section">

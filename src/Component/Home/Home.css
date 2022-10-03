@@ -26,7 +26,6 @@
 .content-section .content p {
 	width: 90%;
 	font-size: 1.5rem;
-	color: #858e9d;
 	line-height: 40px;
 }
 
@@ -44,6 +43,12 @@
 	margin-top: 7%;
 }
 
+.social_container {
+	display: flex;
+	justify-content: center;
+	width: fit-content;
+}
+
 .content-section .content .button a {
 	background-color: #183266;
 	padding: 12px 40px;
@@ -53,24 +58,42 @@
 	letter-spacing: 1.5px;
 	border-radius: 10px;
 }
+
 .content-section .content .button a:hover {
 	background-color: #7f8daa00;
 	color: #183266;
 	border: 2px solid #183266;
 }
 
-.content-section .social {
-	margin-top: 6%;
+.content-section .social_container {
+	margin-top: 2vw;
 }
 
 .content-section .social i {
-	/* color: #000; */
-	font-size: 40px;
-	padding: 2%;
+	font-size: 30px;
+	padding: 1vw;
 }
 .content-section .social i:hover {
 	color: #183266;
 }
+
+.social {
+	display: flex;
+	justify-content: space-between;
+}
+
+.follow_icon {
+	margin: 0 0.5rem 0 0.5rem;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: radial-gradient(79.69% 102.24% at 100% 100.11%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), radial-gradient(89.7% 115.09% at 3.43% 2.75%, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0)), #ceb3fa;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	height: 50px;
+	width: 50px;
+}
+
 #instagram {
 	color: #bc2a8d;
 }
@@ -86,6 +109,7 @@
     .container-1 {
         margin-top: 12vh;
         flex-direction: column;
+		height: 100%;
     }
 
     .content-section {
@@ -110,15 +134,26 @@
         margin-top: 50px;
     }
 
+	.button {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
     .content-section .social {
-        margin-top: 50px;
+        margin-top: 20px;
         margin-bottom: 50px;
     }
+
+	.social_container {
+		width: 100%;
+	}
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1000px) {
     .container-1 {
 		flex-direction: column;
+		height: 100%;
 	}
 
 	.content-section {
@@ -143,8 +178,18 @@
 		margin-top: 50px;
 	}
 
+	.button {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+
 	.content-section .social {
-		margin-top: 50px;
+		margin-top: 20px;
 		margin-bottom: 50px;
+	}
+
+	.social_container {
+		width: 100%;
 	}
 }

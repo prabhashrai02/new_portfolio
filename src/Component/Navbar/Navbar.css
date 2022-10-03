@@ -49,8 +49,8 @@ span {
     right: 1.5rem;
     height: 5rem;
     width: 5rem;
-    text-align: center;
-    background-color: #fff;
+    text-align: center;	
+    background: radial-gradient(79.69% 102.24% at 100% 100.11%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), radial-gradient(89.7% 115.09% at 3.43% 2.75%, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0)), #ceb3fa;
     border-radius: 50%;
     z-index: 300;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
@@ -64,7 +64,8 @@ span {
     height: 3rem;
     width: 3rem;
     border-radius: 50%;
-    background-color: #84afc2 !important;
+    background: radial-gradient(79.69% 102.24% at 100% 100.11%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), radial-gradient(89.7% 115.09% at 3.43% 2.75%, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0)), #764ABC !important;
+
     background-size: cover;
     background-position: center;
     z-index: 100;
