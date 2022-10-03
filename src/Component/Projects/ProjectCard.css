@@ -2,11 +2,8 @@
     background-color: rgb(236, 243, 245);
     border: 2px solid black;
     border-radius: 0.2rem;
-    cursor: pointer;
-    width: 25vw;
-    height: 20vw;
-    margin: 0 1.4vw;
-    transition: 0.3s;
+    width: min(25vw, 30rem);
+    height: min(30vw, 30rem);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -24,23 +21,28 @@
 
 .card_description {
     text-align: center;
+    background-color: aliceblue;
+    margin-top: -22%;
     height: 20%;
+}
+
+.card_description_show {
+    display: block;
 }
 
 .card_link {
     display: flex;
     justify-content: space-between;
-    height: 60%;
 }
 
 .card_button {
-    width: 50%;
+    width: 30%;
 }
 
 @media only screen and (max-width: 600px) {
     .card {
         margin: 1vh 0;
-        width: 22vh;
-        height: 22vh;
+        width: 25vh;
+        height: 25vh;
     }
 }
