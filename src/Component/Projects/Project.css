@@ -43,7 +43,7 @@
 }
 
 .active {
-    scale: 1.4;
+    scale: 1.5;
     z-index: 2;
 }
 
@@ -118,6 +118,6 @@
     .active .card_description{
         margin-top: -12%;
         height: 30%;
-        background-color: rgb(206, 235, 248);
+        background-color: rgb(227, 248, 255);
     }
 }
