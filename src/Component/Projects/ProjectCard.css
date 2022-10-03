@@ -28,13 +28,12 @@
 }
 
 .card_link {
-    margin: 0 1rem;
     display: flex;
-    height: 10%;
+    justify-content: space-between;
+    height: 60%;
 }
 
 .card_button {
-    height: 3vw;
     width: 50%;
 }
 
@@ -43,9 +42,5 @@
         margin: 1vh 0;
         width: 22vh;
         height: 22vh;
-    }
-
-    .card_button {
-        height: 7vw;
     }
 }
