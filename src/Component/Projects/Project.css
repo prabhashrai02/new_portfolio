@@ -18,7 +18,7 @@
     cursor: pointer;
     background-color: rgb(186, 190, 190);
     opacity: 0.5;
-    height: 40vh;
+    height: min(40vh, 40vw);
     width: 2vw;
     display: flex;
     align-items: center;
