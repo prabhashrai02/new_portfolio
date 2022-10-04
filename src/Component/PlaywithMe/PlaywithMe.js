@@ -33,7 +33,6 @@ function PlaywithMe() {
     const computerChoice = computerOptions[computerNumber];
     
     setTimeout(() => {
-      console.log(userSelected, computerChoice)
       setWinner(compareHands(userSelected, computerChoice));
 
       setPlayerHand(select(userSelected));
