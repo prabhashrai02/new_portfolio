@@ -1,0 +1,67 @@
+.skills_section {
+    height: 85vh;
+    padding: 15vh 5% 0 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill_box {
+	margin: 1rem 0.5rem 0 0.5rem;
+	border-radius: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: radial-gradient(79.69% 102.24% at 100% 100.11%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), radial-gradient(89.7% 115.09% at 3.43% 2.75%, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0)), #ceb3fa;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	height: 7rem;
+	width: 7rem;
+}
+
+.skill_icon {
+    width: 5rem;
+    height: 5rem;
+}
+
+.tooltip {
+    position: relative;
+    /* display: inline-block; */
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    margin: 10rem 0 0 0;
+
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+@media only screen and (max-width: 600px) {
+    .skills_section {
+        height: 100%;
+        padding: 20vh 0 10vh 0;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
+    .skills_section {
+        height: 90vh;
+        padding: 10vh 5% 0 5%;
+    }
+}
