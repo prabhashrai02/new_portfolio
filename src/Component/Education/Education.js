@@ -7,7 +7,7 @@ function Education() {
           <div className="timeline_box left">
             <div className="timeline_container">
               <div className="timeline_logo">
-                  <img src="https://storage.googleapis.com/ezap-prod/colleges/326/government-engineering-college-modasa-logo.png" />
+                  <img src="https://storage.googleapis.com/ezap-prod/colleges/326/government-engineering-college-modasa-logo.png" alt="GEC Modasa"/>
               </div>
               <h3 className="org_designation">BE(IT)</h3>
               <h4 className="org_name">GEC Modasa</h4>
@@ -20,7 +20,7 @@ function Education() {
         <div className="timeline_box">
           <div className="timeline_container">
             <div className="timeline_logo">
-                <img src="https://e7.pngegg.com/pngimages/279/924/png-clipart-government-of-india-kendriya-vidyalaya-sangathan-recruitment-examination-lower-division-clerk-test-school-text-teacher.png" />
+                <img src="https://e7.pngegg.com/pngimages/279/924/png-clipart-government-of-india-kendriya-vidyalaya-sangathan-recruitment-examination-lower-division-clerk-test-school-text-teacher.png" alt="Kendriya Vidyalaya"/>
             </div>
             <h3 className="org_designation">HSC</h3>
             <h4 className="org_name">KV 1 Jamnagar</h4>
