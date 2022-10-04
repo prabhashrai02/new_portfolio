@@ -31,7 +31,6 @@
 
 .tooltip {
     position: relative;
-    /* display: inline-block; */
     border-bottom: 1px dotted black;
 }
 
@@ -55,7 +54,7 @@
 @media only screen and (max-width: 600px) {
     .skills_section {
         height: 100%;
-        padding: 20vh 0 10vh 0;
+        padding: 18vh 0 10vh 0;
     }
 }
 
