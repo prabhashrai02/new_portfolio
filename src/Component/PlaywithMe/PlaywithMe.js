@@ -24,6 +24,7 @@ function PlaywithMe() {
   const computerOptions = ["rock", "paper", "scissors"];
   
   const start = (userSelected) => {
+    setWinner("");
     setPlayerHand(rock);
     setcomputerHand(rock);
 
