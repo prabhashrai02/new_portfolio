@@ -13,7 +13,7 @@ function Education() {
               <h4 className="org_name">GEC Modasa</h4>
               <h5 className="org_duration"> Jul 2019 - Present </h5>
               <br/>
-              <p className="org_description"> Pursuing BE in Information Technology with current CGPA of 8.3 (till 6th semester).</p>
+              <p className="org_description"> Pursuing BE in Information Technology. CGPA : 8.3 (till 6th semester).</p>
             </div>
           </div>
 
