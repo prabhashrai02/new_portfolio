@@ -188,6 +188,7 @@ div.fadeIn {
 
   .match button {
     margin-right: 1rem;
+    font-size: 1.1rem;
   }
 
   .player-hand, .computer-hand {
