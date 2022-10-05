@@ -1,8 +1,7 @@
-.contact_section {
+.contact_section { 
     padding: 0 5% 0 5%;
     height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -39,11 +38,7 @@ h3 {
 }
 
 @media only screen and (max-width: 600px) {
-    .contact_section {
-        padding: 20vh 5% 0 5%;
-        height: 80vh;
-    }
-    
+
     .contact_card {
         width: 17rem;
     }
