@@ -55,47 +55,46 @@ function App() {
           events: {
             onClick: {
               enable: true,
-              mode: "push",
+              mode: "repulse",
             },
             onHover: {
               enable: true,
-              mode: "repulse",
+              mode: "bubble",
             },
             resize: true,
           },
           modes: {
-            push: {
-              quantity: 3,
+            bubble: {
+              "distance": 250,
+              "duration": 2,
+              "size": 0,
+              "opacity": 0
             },
             repulse: {
-              distance: 200,
-              duration: 0.4,
+              distance: 400,
+              duration: 4,
             },
           },
         },
         particles: {
-          color: {
-            value: "#ffffff",
-          },
           collisions: {
             enable: true,
           },
           move: {
-            directions: "none",
+            directions: "random",
             enable: true,
             outModes: {
-              default: "bounce",
+              default: "out",
             },
             random: false,
-            speed: 2,
+            speed: 1,
             straight: false,
           },
           number: {
             density: {
-              enable: true,
-              area: 800,
+              enable: false,
             },
-            value: 80,
+            value: 100,
           },
           opacity: {
             value: 0.5,
@@ -104,7 +103,14 @@ function App() {
             type: ["triangle", "circle"],
           },
           size: {
-            value: { min: 1, max: 5 },
+            value: { 
+              min: 1, max: 5 
+            },
+            random: true,
+            anim: {
+              "speed": 4,
+              "size_min": 0.3
+            }
           },
         },
         detectRetina: true,
