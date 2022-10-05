@@ -72,7 +72,7 @@ function App() {
         },
         particles: {
           collisions: {
-            enable: true,
+            enable: false,
           },
           move: {
             enable: true,
