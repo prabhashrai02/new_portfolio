@@ -6,7 +6,6 @@
 .container-1 {
 	display: flex;
 	min-height: 90vh;
-	justify-content: space-between;
 }
 
 .content-section {
