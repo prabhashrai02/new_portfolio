@@ -45,12 +45,6 @@ function App() {
       init={particlesInit}
       loaded={particlesLoaded}
       options={{
-        background: {
-          // color: {
-          //   value: "#0d47a1",
-          // },
-        },
-        fpsLimit: 50,
         interactivity: {
           events: {
             onClick: {
@@ -81,12 +75,11 @@ function App() {
             enable: true,
           },
           move: {
-            directions: "random",
             enable: true,
-            outModes: "out",
             random: false,
-            speed: 1,
-            straight: false,
+            speed: 2,
+            outModes: "out",
+            direction: "top",
           },
           number: {
             density: {
@@ -102,7 +95,7 @@ function App() {
           },
           size: {
             value: { 
-              min: 1, max: 5 
+              min: 1, max: 3 
             },
             random: true,
             anim: {
@@ -111,7 +104,6 @@ function App() {
             }
           },
         },
-        detectRetina: true,
       }}
     />
     </>
