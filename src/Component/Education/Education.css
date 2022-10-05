@@ -1,6 +1,6 @@
 .education_section {
     padding: 20vh 5% 10vh 5%;
-    height: 70vh;
+    height: max(70vh, 100%);
 }
 
 .timeline{
@@ -32,7 +32,9 @@
 .timeline_container{
     padding: 1rem;
     background: var(--cardColor);
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 1.5rem;
+    text-align: center;
 }
 
 .timeline_logo{
@@ -62,7 +64,7 @@
 @media only screen and (max-width: 600px) {
     .education_section {
         padding: 18vh 5% 2vh 5%;
-        height: 80vh;
+        height: max(80vh, 100%);
     }
 
     .timeline_container {
