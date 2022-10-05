@@ -8,8 +8,8 @@ let list = ProjectList.map((project, i) => <Card data={project} key={i}/>);
 function Projects() {
   const breakPoints = [
     {width: 1, itemsToShow: 1},
-    {width: 300, itemsToShow: 2},
-    {width: 768, itemsToShow: 3},
+    {width: 500, itemsToShow: 2},
+    {width: 800, itemsToShow: 3},
   ];
   return (
     <>
