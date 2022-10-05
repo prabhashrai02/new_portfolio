@@ -45,6 +45,7 @@ function App() {
       init={particlesInit}
       loaded={particlesLoaded}
       options={{
+        fpsLimit: 20,
         interactivity: {
           events: {
             onClick: {
