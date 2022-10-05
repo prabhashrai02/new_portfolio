@@ -5,7 +5,7 @@ function ExperienceCard (props) {
     return (
         <div className="experience_card">
             <a href={data.website} target="_blank" rel="noreferrer">
-                <img src={data.logo} className="experience_logo"/>
+                <img src={data.logo} alt="company" className="experience_logo"/>
             </a>
             <h2>{data.designation}</h2>
             <h4>{data.duration}</h4>
