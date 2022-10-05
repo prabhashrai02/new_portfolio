@@ -1,70 +1,69 @@
-.card {
+.project_card {
+    width: 20rem;
+    padding: 1rem;
+    margin: 1rem 1rem;
     background: var(--cardColor);
-    box-shadow: 0 4px 6px 0 rgba(0,0,0,0.2);
-    border-radius: 0.5rem;
-    width: min(25vw, 30rem);
-    height: min(30vw, 30rem);
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    padding: 0.1rem;
-    margin: 0.5rem 0;
+    border-radius: 2rem;
 }
 
 .card_image {
-    width: 90%;
-    height: 80%;
+    width: 20rem;
+    height: 18rem;
+    background: var(--cardColor);
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .card_description {
-    width: 100%;
-    text-align: center;
+    background: var(--cardColor);
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 1rem;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0;
 }
 
-h6 {
-    font-size: larger;
+.project_name {
+    font-size: x-large;
 }
 
-.card_description_show {
-    display: block;
+.project_tech {
+    font: larger;
 }
 
 .card_link {
+    width: 20rem;
     display: flex;
-    justify-content: space-between;
-}
-
-.card_button {
-    width: 30%;
+    justify-content: space-around;
 }
 
 @media only screen and (max-width: 600px) {
-    .card {
-        margin: 0.1rem 0;
-        border-radius: 0.5rem;
-        width: 10rem;
-        height: 34vh;
-    }
-
-    h6{
-        font-size: 0.7rem;
-    }
-}
-
-@media only screen and (min-width: 601px) and (max-width: 1000px) {
-    .card {
-        margin: 0.1rem 0;
-        width: 30vw;
-        height: 35vw;
-    }
     
-    .card_description {
-        margin-top: -22%;
-        height: 20%;
+    .project_card {
+        width: 17rem;
     }
 
-    h6{
-        font-size: 2vw;
+    .card_image {
+        width: 17rem;
+    }
+
+    .card_description {
+        width: 17rem;
+    }
+
+    .project_name {
+        font-size: large;
+    }
+
+    .card_link {
+        width: 17rem;
+        display: flex;
+        justify-content: space-around;
     }
 }

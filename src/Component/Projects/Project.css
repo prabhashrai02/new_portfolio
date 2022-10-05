@@ -1,9 +1,10 @@
 .project_section {
-    padding: 20vh 5% 10vh 5%;
+    padding: 20vh 0 10vh 0;
+    min-height: 70vh;
     display: flex;
-    height: 70vh;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .rec-arrow {
