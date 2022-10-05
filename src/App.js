@@ -83,9 +83,7 @@ function App() {
           move: {
             directions: "random",
             enable: true,
-            outModes: {
-              default: "out",
-            },
+            outModes: "out",
             random: false,
             speed: 1,
             straight: false,
