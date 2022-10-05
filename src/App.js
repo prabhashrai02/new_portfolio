@@ -89,6 +89,7 @@ function App() {
                 area: 800,
               },
               value: 50,
+              limit: 100,
             },
             opacity: {
               value: 0.5,
