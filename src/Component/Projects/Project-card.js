@@ -9,9 +9,7 @@ function Card(props) {
             <img className="card_image" src={project.image} alt="project"/>
             <div className="card_description">
                 <h4 className="project_name">{project.name}</h4>
-                <br />
                 <h5 className="project_tech">{project.tech_stack}</h5>
-                <br />
                 <div className="card_link">
                     <a rel="noreferrer" target="_blank" className="card_button" href={project.github_link}>
                         <BsGithub>github</BsGithub>
