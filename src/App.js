@@ -24,89 +24,85 @@ function App() {
 
   return (
     <>
-
-    <Router>
-      <div className="brand">"See the good"</div>
-      <Navbar />
-      <Routes>
-        <Route exact path='/home' element={<Home />} />
-        <Route exact path='/challenge' element={<PlaywithMe />} />
-        <Route exact path='/skills' element={<Skills />} />
-        <Route exact path='/experience' element={<Experience />} />
-        <Route exact path='/contact' element={<Contact />} />
-        <Route exact path='/projects' element={<Projects />} />
-        <Route exact path='/education' element={<Education />} />
-        <Route path="*" element={<Navigate replace to="/home" />} />
-      </Routes>
-    </Router>
-    
-    <Particles
-      id="tsparticles"
-      init={particlesInit}
-      loaded={particlesLoaded}
-      options={{
-        fpsLimit: 20,
-        interactivity: {
-          events: {
-            onClick: {
-              enable: true,
-              mode: "repulse",
+      <Router>
+        <div className="brand">"See the good"</div>
+        <Navbar />
+        <Routes>
+          <Route exact path='/home' element={<Home />} />
+          <Route exact path='/challenge' element={<PlaywithMe />} />
+          <Route exact path='/skills' element={<Skills />} />
+          <Route exact path='/experience' element={<Experience />} />
+          <Route exact path='/contact' element={<Contact />} />
+          <Route exact path='/projects' element={<Projects />} />
+          <Route exact path='/education' element={<Education />} />
+          <Route path="*" element={<Navigate replace to="/home" />} />
+        </Routes>
+      </Router>
+      <Particles
+        id="tsparticles"
+        init={particlesInit}
+        loaded={particlesLoaded}
+        options={{
+          fpsLimit: 50,
+          interactivity: {
+            events: {
+              onClick: {
+                enable: true,
+                mode: "push",
+              },
+              onHover: {
+                enable: true,
+                mode: "repulse",
+              },
+              resize: true,
             },
-            onHover: {
-              enable: true,
-              mode: "bubble",
-            },
-            resize: true,
-          },
-          modes: {
-            bubble: {
-              "distance": 250,
-              "duration": 2,
-              "size": 0,
-              "opacity": 0
-            },
-            repulse: {
-              distance: 400,
-              duration: 4,
+            modes: {
+              push: {
+                quantity: 1,
+              },
+              repulse: {
+                distance: 200,
+                duration: 0.4,
+              },
             },
           },
-        },
-        particles: {
-          collisions: {
-            enable: false,
-          },
-          move: {
-            enable: true,
-            random: false,
-            speed: 2,
-            outModes: "out",
-            direction: "top",
-          },
-          number: {
-            density: {
+          particles: {
+            color: {
+              value: "#ffffff",
+            },
+            collisions: {
               enable: false,
             },
-            value: 100,
-          },
-          opacity: {
-            value: 0.5,
-          },
-          shape: {
-            type: ["triangle", "circle"],
-          },
-          size: {
-            value: { 
-              min: 1, max: 3 
+            move: {
+              directions: "top",
+              enable: true,
+              outModes: {
+                default: "out",
+              },
+              random: false,
+              speed: 2,
+              straight: false,
             },
-            random: true,
-            anim: {
-              "speed": 4,
-              "size_min": 0.3
-            }
+            number: {
+              density: {
+                enable: false,
+                area: 800,
+              },
+              value: 50,
+            },
+            opacity: {
+              value: 0.5,
+            },
+            shape: {
+              type: ["triangle", "circle"],
+            },
+            size: {
+              value: { min: 1, max: 5 },
+            },
           },
-        },
-      }}
-    />
+          detectRetina: true,
+        }}
+      />
     </>
   );
 }
