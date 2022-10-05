@@ -1,6 +1,6 @@
 .education_section {
     padding: 20vh 5% 10vh 5%;
-    height: 70vh;
+    min-height: 70vh;
 }
 
 .timeline{
