@@ -30,12 +30,7 @@ function Education() {
           </div>
         </div>
 
-          <div id="timeline-divider">
-            <div className="timeline-traveller">
-              <div>
-                <i className="fas fa-biking"></i>
-              </div>
-            </div>
+          <div id="timeline_divider">
           </div>
         </div>
       </>
