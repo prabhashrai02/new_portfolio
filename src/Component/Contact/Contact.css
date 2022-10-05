@@ -37,6 +37,10 @@ h3 {
     color: black;
 }
 
+.contact_card_icon {
+    margin-top: 0.2rem;
+}
+
 @media only screen and (max-width: 600px) {
 
     .contact_card {
