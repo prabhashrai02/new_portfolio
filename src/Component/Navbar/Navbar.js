@@ -11,6 +11,7 @@ import { GiSkills } from "react-icons/gi";
 function close() {
   let chk = document.getElementById("nav-toggle");
   chk.checked = !chk.checked;
+  window.scrollTo(0, 0);
 }
 
 function Navbar() {
