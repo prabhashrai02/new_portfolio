@@ -57,6 +57,12 @@
   cursor: pointer;
 }
 
+.intro button {
+  width: auto;
+  height: auto;
+  padding: 0.2rem 1rem;
+}
+
 .match {
   position: relative;
   width: 50vw;
@@ -179,9 +185,13 @@ div.fadeIn {
     font-size: 1rem;
   }
 
-  .intro button,
   .match button {
     height: 2.5rem;
+    font-size: 1.2rem;
+    margin: 2rem 0 0 0;
+  }
+
+  .intro button {
     font-size: 1.2rem;
     margin: 2rem 0 0 0;
   }
@@ -222,10 +232,14 @@ div.fadeIn {
     margin-top: 5rem;
   }
 
-  .intro button,
   .match button {
     width: 6rem;
     height: 3rem;
     font-size: 1.3rem;
   }
+
+  .intro button {
+    font-size: 1.3rem;
+  }
+
 }
