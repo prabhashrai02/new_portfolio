@@ -24,19 +24,19 @@ function Home() {
               </div>
               <div className="social_container">
                 <div className="social">
-                  <a href="https://twitter.com/prabhashrai02" id="twitter" target="_blank" rel="noreferrer">
+                  <a href="https://twitter.com/prabhashrai02" target="_blank" rel="noreferrer">
                   <div className="follow_icon">
-                    <i><FiTwitter /></i>
+                    <i className="social_icon"><FiTwitter id="twitter" /></i>
                   </div>
                   </a>
-                  <a href="https://github.com/prabhashrai02" id="github" target="_blank" rel="noreferrer">
+                  <a href="https://github.com/prabhashrai02" target="_blank" rel="noreferrer">
                   <div className="follow_icon">
-                    <i><FiGithub /></i>
+                    <i className="social_icon"><FiGithub id="github" /></i>
                   </div>
                   </a>
-                  <a href="https://instagram.com/prabhashrai02" id="instagram" target="_blank" rel="noreferrer">
+                  <a href="https://instagram.com/prabhashrai02" target="_blank" rel="noreferrer">
                     <div className="follow_icon">
-                      <i><FiInstagram /></i>  
+                      <i className="social_icon"><FiInstagram id="instagram" /></i>  
                     </div>
                   </a>
                 </div>

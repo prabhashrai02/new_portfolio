@@ -93,6 +93,13 @@
 	width: 50px;
 }
 
+.social_icon {
+    color: black;
+    width: 2rem;
+    height: 2rem;
+    padding: 0.5rem;
+}
+
 #instagram {
 	color: #bc2a8d;
 }
