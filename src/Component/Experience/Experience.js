@@ -12,7 +12,7 @@ function Experience() {
             list.map(
               (exp, ind) => {
                 return (
-                  <div key={ind}>
+                  <div className="experience_cards" key={ind}>
                     {exp}
                   </div>
                 )

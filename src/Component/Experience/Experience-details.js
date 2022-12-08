@@ -9,5 +9,16 @@ export const Experiences = [
         description_l1: `Worked to build Angular-based Curation App (backbone of their flagship platform Polly).`,      
         description_l2: `Built custom configuration system, saved 2-3 days of Developers on every new demand.`,
         description_l3: `Refactored their codebase and used reusable components, performance increased to many folds.`,
-    }
+    },
+    // {
+    //     company: "Groww",
+    //     website: `https://groww.in/`,
+    //     logo: "https://storage.googleapis.com/groww-assets/web-assets/img/website-logo/logo-dark-groww.svg",
+    //     designation: "SDE-Intern",
+    //     duration: "April 2022 - Present",
+    //     tech_stack: `ReactJS, Typescript, HTML, CSS, SCSS, RXJS`,
+    //     description_l1: `Worked to build Angular-based Curation App (backbone of their flagship platform Polly).`,      
+    //     description_l2: `Built custom configuration system, saved 2-3 days of Developers on every new demand.`,
+    //     description_l3: `Refactored their codebase and used reusable components, performance increased to many folds.`,
+    // }
 ]
