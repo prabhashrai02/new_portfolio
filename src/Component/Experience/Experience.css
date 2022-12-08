@@ -1,5 +1,5 @@
 .experience_section {
-    padding: 0 5% 2rem 5%;
+    padding: 3rem 5% 2rem 5%;
     display: flex;
     min-height: 100vh;
     align-items: center;
@@ -28,10 +28,6 @@
 }
 
 @media only screen and (max-width: 600px) {
-
-    .experience_cards {
-        margin-top: 3.5rem;
-    }
 
     .experience_card {
         width: 17rem;

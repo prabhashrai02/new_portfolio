@@ -58,13 +58,13 @@
 @media only screen and (max-width: 600px) {
     .skills_section {
         height: 100%;
-        padding: 18vh 0 10vh 0;
+        padding: 5rem 0 10vh 0;
     }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1000px) {
     .skills_section {
         min-height: 90vh;
-        padding: 10vh 5% 0 5%;
+        padding: 5rem 5% 0 5%;
     }
 }
