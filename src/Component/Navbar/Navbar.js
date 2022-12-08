@@ -1,5 +1,5 @@
 import "./Navbar.css";
-import React from "react";
+import { React, useState } from "react";
 import { Link } from "react-router-dom";
 import { AiTwotoneHome, AiFillContacts } from "react-icons/ai";
 import { RiProjectorFill } from "react-icons/ri";
@@ -15,6 +15,27 @@ function close() {
 }
 
 function Navbar() {
+
+  const [selectedTheme, setSelectedTheme] = useState('dark_theme');
+  const [theme, setTheme] = useState('Dark');
+  const [themeImage, setThemeImage] = useState('https://images.all-free-download.com/images/graphiclarge/smiling_sun_312442.jpg');
+
+  function changeTheme () {
+      if (theme === 'Light') {
+        setSelectedTheme('dark_theme');
+        setTheme('Dark');
+        setThemeImage('https://images.all-free-download.com/images/graphiclarge/smiling_sun_312442.jpg');
+      }
+      else {
+        setSelectedTheme('light_theme');
+        setTheme('Light');
+        setThemeImage('https://media.istockphoto.com/id/947112512/vector/moon-and-stars-flat-icon-isolated-sign-stock-vector.jpg?s=612x612&w=0&k=20&c=HM-46rmpgz_eMFIIpGQUmupHBcKlJcDif_YdKY4klQI=');
+      }
+
+      // select theme for whole page from user input
+      document.body.className = selectedTheme;
+  }
+
   return (
     <>
       <div className="navigation">
@@ -25,6 +46,11 @@ function Navbar() {
         <div className="navigation__background"></div>
 
         <nav className="navigation__nav" role="navigation">
+
+          <button className="theme_button" onClick={changeTheme}>
+            <img className="theme_button_image" src={themeImage} alt="theme"/>
+          </button>
+
           <ul className="nav-list">
             <li className="navigation__item">
               <Link onClick={close} to="/home" className="navigation__link">

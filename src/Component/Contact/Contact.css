@@ -34,7 +34,7 @@ h3 {
 
 .no_decoration {
     text-decoration: none;
-    color: black;
+    color: var(--textColor);
 }
 
 .contact_card_icon {

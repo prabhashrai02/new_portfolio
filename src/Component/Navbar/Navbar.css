@@ -24,12 +24,11 @@
 }
 
 .icon:hover {
-    background-color: white;
     color: #ff5f02;
 }
 
 span {
-    color: white;
+    color: var(--textColor);
     font-size: 1.7rem;
 }
 
@@ -96,7 +95,7 @@ span {
 }
 
 .navigation__item {
-    margin: 1rem;
+    margin: 0.5rem 0;
 }
 
 .navigation__link span {
@@ -127,7 +126,7 @@ span {
     display: inline-block;
     width: 2.2rem;
     height: 2px;
-    background-color: #4A676A;
+    background-color: var(--textColor);
 }
 
 .navigation__icon::before,
@@ -168,6 +167,25 @@ span {
     transform: rotate(-135deg);
 }
 
+.theme_button {
+    position: fixed;
+    top: 1.5rem;
+    left: 1.5rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.theme_button:hover {
+    scale: 1.1;
+}
+
+.theme_button_image {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+}
+
 @media screen and (min-width: 1000px) {
     .navigation__link:link,
     .navigation__link:visited {
@@ -191,6 +209,16 @@ span {
       width: 7rem;
     }
 
+    .theme_button {
+        top: 4rem;
+        left: 4rem;
+    }
+    
+    .theme_button_image {        
+        height: 7rem;
+        width: 7rem;
+    }
+
     .navigation__background {
       top: 4.5rem;
       right: 4.5rem;
@@ -200,11 +228,19 @@ span {
 }
 
 @media screen and (max-width: 600px) {
+    .nav-list {
+        margin-top: 1rem;
+    }
+
     .navigation__link:link,
     .navigation__link:visited {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
-    
+
+    .navigation__link span {
+        font-size: 1rem;
+    }
+
     .navigation__icon {
         margin-top: 2rem;
     }
@@ -220,6 +256,16 @@ span {
       right: 1rem;
       height: 4rem;
       width: 4rem;
+    }
+    
+    .theme_button {
+        top: 1rem;
+        left: 1rem;
+    }
+    
+    .theme_button_image {        
+        height: 4rem;
+        width: 4rem;
     }
 
     .navigation__background {

@@ -28,6 +28,10 @@
 }
 
 @media only screen and (max-width: 600px) {
+
+    .experience_section {
+        padding: 5rem 5% 0 5%;
+    }
     
     .experience_card {
         width: 17rem;

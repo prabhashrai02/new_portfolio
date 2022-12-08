@@ -16,7 +16,7 @@
 }
 
 .content-section .title {
-	color: #183266;
+	color: var(--brandColor);
 	font-size: 2rem;
 	font-weight: 800;
 	padding: 3% 0;
@@ -49,7 +49,7 @@
 }
 
 .content-section .content .button a {
-	background-color: #183266;
+	background-color: var(--brandColor);
 	padding: 12px 40px;
 	text-decoration: none;
 	color: #fff;
@@ -59,9 +59,8 @@
 }
 
 .content-section .content .button a:hover {
-	background-color: #7f8daa00;
-	color: #183266;
-	border: 2px solid #183266;
+	background-color: transparent;
+	border: 2px solid var(--brandColor);
 }
 
 .content-section .social_container {
@@ -73,7 +72,7 @@
 	padding: 1vw;
 }
 .content-section .social i:hover {
-	color: #183266;
+	color: var(--brandColor);
 }
 
 .social {
