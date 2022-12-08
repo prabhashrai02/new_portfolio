@@ -44,6 +44,10 @@
     justify-content: space-around;
 }
 
+.card_button {
+    text-decoration: none;
+    color: var(--brandColor);
+}
 @media only screen and (max-width: 600px) {
     
     .project_card {
