@@ -7,6 +7,7 @@ import { SiRiotgames } from "react-icons/si";
 import { IoBookSharp } from "react-icons/io5";
 import { MdWork } from "react-icons/md";
 import { GiSkills } from "react-icons/gi";
+import DayNightToggle from 'react-day-and-night-toggle';
 
 function close() {
   let chk = document.getElementById("nav-toggle");
@@ -15,25 +16,22 @@ function close() {
 }
 
 function Navbar() {
-
+  const [isDarkMode, setIsDarkMode] = useState(false);
   const [selectedTheme, setSelectedTheme] = useState('dark_theme');
-  const [theme, setTheme] = useState('Dark');
-  const [themeImage, setThemeImage] = useState('https://images.all-free-download.com/images/graphiclarge/smiling_sun_312442.jpg');
 
   function changeTheme () {
-      if (theme === 'Light') {
-        setSelectedTheme('dark_theme');
-        setTheme('Dark');
-        setThemeImage('https://images.all-free-download.com/images/graphiclarge/smiling_sun_312442.jpg');
-      }
-      else {
-        setSelectedTheme('light_theme');
-        setTheme('Light');
-        setThemeImage('https://media.istockphoto.com/id/947112512/vector/moon-and-stars-flat-icon-isolated-sign-stock-vector.jpg?s=612x612&w=0&k=20&c=HM-46rmpgz_eMFIIpGQUmupHBcKlJcDif_YdKY4klQI=');
-      }
+    
+    setIsDarkMode(!isDarkMode);
 
-      // select theme for whole page from user input
-      document.body.className = selectedTheme;
+    if (selectedTheme === 'light_theme') {
+      setSelectedTheme('dark_theme');
+    }
+    else {
+      setSelectedTheme('light_theme');
+    }
+
+    // select theme for whole page from user input
+    document.body.className = selectedTheme;
   }
 
   return (
@@ -46,10 +44,9 @@ function Navbar() {
         <div className="navigation__background"></div>
 
         <nav className="navigation__nav" role="navigation">
-
-          <button className="theme_button" onClick={changeTheme}>
-            <img className="theme_button_image" src={themeImage} alt="theme"/>
-          </button>
+          <div className="theme_button">
+            <DayNightToggle onChange={changeTheme} checked={isDarkMode} />
+          </div>
 
           <ul className="nav-list">
             <li className="navigation__item">

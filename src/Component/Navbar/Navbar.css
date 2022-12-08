@@ -180,12 +180,6 @@ span {
     scale: 1.1;
 }
 
-.theme_button_image {
-    height: 5rem;
-    width: 5rem;
-    border-radius: 50%;
-}
-
 @media screen and (min-width: 1000px) {
     .navigation__link:link,
     .navigation__link:visited {
@@ -212,11 +206,6 @@ span {
     .theme_button {
         top: 4rem;
         left: 4rem;
-    }
-    
-    .theme_button_image {        
-        height: 7rem;
-        width: 7rem;
     }
 
     .navigation__background {
@@ -261,11 +250,6 @@ span {
     .theme_button {
         top: 1rem;
         left: 1rem;
-    }
-    
-    .theme_button_image {        
-        height: 4rem;
-        width: 4rem;
     }
 
     .navigation__background {
