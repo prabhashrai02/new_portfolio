@@ -12,10 +12,6 @@
   font-family: sans-serif;
 }
 
-.game_name {
-  font-size: 0.8rem;
-}
-
 .score {
   height: 20vh;
   display: flex;
@@ -179,6 +175,10 @@ div.fadeIn {
 
   .score h2,
   .intro h1 {
+    font-size: 0.8rem;
+  }
+
+  .game_name {
     font-size: 0.8rem;
   }
   
