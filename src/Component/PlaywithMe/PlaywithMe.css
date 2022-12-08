@@ -11,6 +11,11 @@
   width: 50vw;
   font-family: sans-serif;
 }
+
+.game_name {
+  font-size: 0.8rem;
+}
+
 .score {
   height: 20vh;
   display: flex;

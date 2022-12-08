@@ -118,7 +118,7 @@ function PlaywithMe() {
           </div>
 
           <div className="intro">
-            <h2>Rock Paper and Scissors</h2>
+            <h2 className='game_name'>Rock Paper and Scissors</h2>
             <button onClick={play}>Let's Play</button>
           </div>
 
