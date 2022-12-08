@@ -1,92 +1,55 @@
 .education_section {
-    padding: 20vh 5% 10vh 5%;
-    min-height: 70vh;
+    padding: 15vh 0 10vh 0;
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.timeline{
-    position: relative;
-    width: 75%;
-}
-
-.timeline_box{
-    padding: 0.3rem;
-    width: 40%;
-    min-height: 15rem;
-    position: relative;
-    left: 5%;
-    text-align: right;
-}
-
-.timeline_box:nth-child(2n){
-    left:53%;
-}
-
-.timeline_box:nth-child(2n+1)::after{
-    right: -11.8%;
-}
-
-.timeline_box:nth-child(2n)::after{
-    left: -9%;
-}
-
-.timeline_container{
-    padding: 0.5rem;
+.education_box {
+    width: 20rem;
+    height: 35rem;
+    padding: 1rem;
+    margin: 1rem 1rem;
     background: var(--cardColor);
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    border-radius: 1.5rem;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2rem;
 }
 
-.timeline_logo{
-    position: absolute;
-    width: 3.5rem;
-    overflow: hidden;
+.education_logo {
+    width: 20rem;
+    height: 18rem;
+    background: var(--cardColor);
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.timeline_logo > img{
-    width: 100%;
+.education_org {
+    width: 20rem;
+    padding: 1rem 0;
+    margin: 1rem 1rem;
+    background: var(--cardColor);
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#timeline_divider{
-    position: absolute;
-    width: 0;
-    top: 25vh;
-    left: 50%;
-    border: 0.1rem dashed #0000006b;
-    height: min(50vh, 60%);
-    color: #433E3F;
-}
-
-.org_designation {
-    margin: 0 0 1rem 0;
-}
 
 @media only screen and (max-width: 600px) {
-    .education_section {
-        padding: 15vh 5% 5vh 5%;
-        height: 80vh;
+    
+    .education_box {
+        width: 17rem;
     }
 
-    .timeline_container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .education_logo {
+        width: 17rem;
     }
 
-    .timeline_logo {
-        position: relative;
-    }
-
-    .timeline_box {
-        text-align: left;
-    }
-
-    .timeline_box {
-        font-size: 0.7rem;
-    }
-
-    .org_designation {
-        margin: 0;
+    .education_org {
+        width: 17rem;
     }
 }
