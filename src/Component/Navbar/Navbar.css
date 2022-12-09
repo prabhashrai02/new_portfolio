@@ -76,7 +76,7 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 95vh;
     opacity: 0;
     width: 100%;
     visibility: hidden;
@@ -217,6 +217,11 @@ span {
 }
 
 @media screen and (max-width: 600px) {
+
+    .navigation__nav {
+        min-height: 100vh;
+    }
+
     .nav-list {
         margin-top: 1rem;
     }
