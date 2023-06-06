@@ -24,7 +24,7 @@ export const Experiences = [
         description: [
             `Developed the Angular-based Curation App, serving as the core infrastructure of the flagship platform Polly.`,
             `Implemented a scalable and efficient custom configuration system, optimizing development time by saving 2-3 days for each new requirement.`,
-            `Conducted a codebase refactoring, employing reusable components and enhancing performance through improved architecture and optimization techniques.`
+            `Conducted a codebase refactoring, employing reusable components and enhancing performance through improved architecture and optimization techniques.`,
             `Made significant contributions to enhancing overall system efficiency, performance, and maintainability, resulting in an optimized and robust software solution.`
         ]
     }

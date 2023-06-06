@@ -1,6 +1,6 @@
 import "./Experience.css";
 
-function ExperienceCard (props) {
+const ExperienceCard = (props) => {
     const data = props.data;
     return (
         <div className="experience_card">

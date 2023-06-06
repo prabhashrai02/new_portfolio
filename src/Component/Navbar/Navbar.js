@@ -1,4 +1,3 @@
-import "./Navbar.css";
 import { React, useState } from "react";
 import { Link } from "react-router-dom";
 import { AiTwotoneHome, AiFillContacts } from "react-icons/ai";
@@ -8,8 +7,9 @@ import { IoBookSharp } from "react-icons/io5";
 import { MdWork } from "react-icons/md";
 import { GiSkills } from "react-icons/gi";
 import DayNightToggle from 'react-day-and-night-toggle';
+import "./Navbar.css";
 
-function close() {
+const close = () => {
   let chk = document.getElementById("nav-toggle");
   chk.checked = !chk.checked;
   window.scrollTo(0, 0);

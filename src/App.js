@@ -1,4 +1,3 @@
-import './App.css';
 import Experience from './Component/Experience/Experience';
 import Home from './Component/Home/Home';
 import Navbar from './Component/Navbar/Navbar';
@@ -11,8 +10,9 @@ import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import { Routes, Route, Navigate, HashRouter as Router } from 'react-router-dom';
+import './App.css';
 
-function App() {
+const App = () => {
   const particlesInit = useCallback(async (engine) => {
 
     await loadFull(engine);

@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
-import './PlaywithMe.css';
 import rock from "../../Assets/rock.png";
 import scissors from "../../Assets/scissors.png";
 import paper from "../../Assets/paper.png";
+import './PlaywithMe.css';
 
-function PlaywithMe() {
+const PlaywithMe = () => {
   
   const [playerHand, setPlayerHand] = useState(rock);
   const [computerHand, setcomputerHand] = useState(rock);

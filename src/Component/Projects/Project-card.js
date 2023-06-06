@@ -1,8 +1,8 @@
-import "./ProjectCard.css";
 import { BsGithub } from "react-icons/bs";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import "./ProjectCard.css";
 
-function Card(props) {
+const Card = (props) => {
     const project = props.data;
     return (
         <div className="project_card">

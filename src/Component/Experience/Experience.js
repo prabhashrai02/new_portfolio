@@ -3,7 +3,7 @@ import ExperienceCard from './Experience-card';
 import { Experiences } from './Experience-details';
 import "./Experience.css";
 
-function Experience() {
+const Experience = () => {
   const list = Experiences.map((exp, ind) => <ExperienceCard data={exp} key={ind}/>);
     return (
       <>

@@ -2,7 +2,7 @@ import React from "react";
 import './Home.css';
 import { FiTwitter, FiGithub, FiInstagram } from "react-icons/fi";
 
-function Home() {
+const Home = () => {
   return (
     <>
       <div className="section">
@@ -13,10 +13,10 @@ function Home() {
               </div>
               <div className="content">
                   <p> 
-                  Tech Enthusiast, looking for great opportunities to learn in this field,
-                  have some basic knowledge of programming and development 
-                  with some experience in Frontend development and
-                  a good grip on Data Structures.
+                    Tech Enthusiast, looking for great opportunities to learn in this field,
+                    have some basic knowledge of programming and development 
+                    with some experience in Frontend development and
+                    a good grip on Data Structures.
                   </p>
                   <div className="button">
                       <a href="https://www.linkedin.com/in/prabhashrai02/" target="_blank" rel="noreferrer">Follow Me</a>

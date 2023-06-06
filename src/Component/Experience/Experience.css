@@ -9,6 +9,7 @@
 
 .experience_card {
     width: 40rem;
+    max-width: 80dvw;
     padding: 1rem;
     background: var(--cardColor);
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -31,6 +32,7 @@
 
     .experience_card {
         width: 20rem;
+        max-width: 80dvw;
     }
 
     .experience_logo {

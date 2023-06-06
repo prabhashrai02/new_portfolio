@@ -4,7 +4,7 @@ import "./Project.css";
 
 let list = ProjectList.map((project, i) => <Card data={project} key={i}/>);
 
-function Projects() {
+const Projects = () => {
 
   return (
     <>
