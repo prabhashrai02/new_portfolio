@@ -1,6 +1,8 @@
 
 .section {
-	padding: 5% 5%;
+	height: 100dvh;
+	padding: 0 5%;
+	display: flex;
 }
 
 .container-1 {
