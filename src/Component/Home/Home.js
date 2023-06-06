@@ -13,10 +13,11 @@ const Home = () => {
               </div>
               <div className="content">
                   <p> 
-                    Tech Enthusiast, looking for great opportunities to learn in this field,
-                    have some basic knowledge of programming and development 
-                    with some experience in Frontend development and
-                    a good grip on Data Structures.
+                  Welcome to my portfolio website!
+                  I'm a frontend engineer specializing in creating seamless digital experiences.
+                  With a strong foundation in programming, expertise in data structures, and proficiency in the latest web technologies,
+                  I craft visually stunning and user-friendly interfaces. I thrive on learning, collaborating, and pushing boundaries.
+                  Let's shape the future of the web together!
                   </p>
                   <div className="button">
                       <a href="https://www.linkedin.com/in/prabhashrai02/" target="_blank" rel="noreferrer">Follow Me</a>
