@@ -13,9 +13,13 @@ function ExperienceCard (props) {
                 <h5>{data.tech_stack}</h5>
             </div>
             <br />
-            <li>{data.description_l1}</li>
-            <li>{data.description_l2}</li>
-            <li>{data.description_l3}</li>
+            {
+                data.description.map((detail) => {
+                    return (
+                        <li key={detail}>{detail}</li>
+                    )
+                })
+            }
         </div>
     );
 }

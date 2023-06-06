@@ -1,14 +1,14 @@
 .experience_section {
-    padding: 0 5% 0 5%;
+    padding: 5rem 5%;
     display: flex;
-    min-height: 100vh;
+    min-height: 100dvh;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .experience_card {
-    width: 20rem;
+    width: 40rem;
     padding: 1rem;
     background: var(--cardColor);
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -16,7 +16,7 @@
     flex-direction: column;
     align-items: center;
     border-radius: 2rem;
-    margin: 1rem 1rem;
+    margin: 1rem;
 }
 
 .head {
@@ -30,7 +30,7 @@
 @media only screen and (max-width: 600px) {
 
     .experience_card {
-        width: 17rem;
+        width: 20rem;
     }
 
     .experience_logo {
