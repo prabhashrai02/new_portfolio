@@ -1,6 +1,6 @@
 .skills_section {
     min-height: 85vh;
-    padding: 15vh 5% 0 5%;
+    padding: 15vh 5% 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +13,7 @@
 }
 
 .skill_box {
-	margin: 1rem 0.5rem 0 0.5rem;
+	margin: 1rem 0.5rem 0;
 	border-radius: 20%;
 	display: flex;
 	justify-content: center;
@@ -24,9 +24,16 @@
 	width: 7rem;
 }
 
+.skill_box a {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .skill_icon {
     width: 5rem;
     height: 5rem;
+    object-fit: contain;
 }
 
 .tooltip {

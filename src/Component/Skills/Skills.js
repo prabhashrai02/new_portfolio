@@ -1,95 +1,25 @@
 import React from "react";
+import { SkillsList } from "./skills-details";
 import "./Skills.css";
 
-function Skills() {
+const Skills = () => {
+  console.log(SkillsList)
   return (
     <>
       <div className="skills_section">
         <div className="skill_container">
-          <div className="tooltip skill_box">
-            <a href="https://getbootstrap.com" target="_blank" rel="noreferrer">
-              <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="angular" className="skill_icon" />
-            </a>
-            <span className="tooltiptext">Angular</span>
-          </div>
-          <div className="tooltip skill_box">
-            <a href="https://getbootstrap.com" target="_blank" rel="noreferrer">
-              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" className="skill_icon"/>
-            </a>
-            <span className="tooltiptext">Bootstarp</span>
-          </div>
-          <div className="tooltip skill_box">
-            <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer">
-              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" className="skill_icon"/>
-            </a>
-            <span className="tooltiptext">C</span>
-          </div>
-          <div className="tooltip skill_box">
-            <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer" >
-              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" className="skill_icon" />
-            </a>
-            <span className="tooltiptext">C++</span>
-          </div>
-          <div className="tooltip skill_box">
-            <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
-              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" className="skill_icon"/>
-            </a>
-            <span className="tooltiptext">CSS</span>
-          </div>
-          <div className="tooltip skill_box">
-            <a href="https://dart.dev" target="_blank" rel="noreferrer">
-              <img src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg" alt="dart" className="skill_icon" />
-            </a>
-            <span className="tooltiptext">Dart</span>
-          </div>
-          <div className="tooltip skill_box">
-            <a href="https://firebase.google.com/" target="_blank" rel="noreferrer">
-              <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase"/>
-            </a>
-            <span className="tooltiptext">Firebase</span>
-          </div>
-          <div className="tooltip skill_box">
-            <a href="https://flutter.dev" target="_blank" rel="noreferrer">
-              <img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="flutter" className="skill_icon"/>
-            </a>
-            <span className="tooltiptext">Flutter</span>
-          </div>
-          <div className="tooltip skill_box">
-            <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
-              <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" className="skill_icon"/>
-            </a>
-            <span className="tooltiptext">Git</span>
-          </div>
-          <div className="tooltip skill_box">
-            <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
-              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" className="skill_icon"/>
-            </a>
-            <span className="tooltiptext">HTML5</span>
-          </div>
-          <div className="tooltip skill_box">
-            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
-              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" className="skill_icon" />
-            </a>
-            <span className="tooltiptext">Javascript</span>
-          </div>
-          <div className="tooltip skill_box">
-            <a href="https://www.mysql.com/" target="_blank" rel="noreferrer">
-              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" className="skill_icon" />
-            </a>
-            <span className="tooltiptext">MySQL</span>
-          </div>
-          <div className="tooltip skill_box">
-            <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
-              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" className="skill_icon"/>
-            </a>
-            <span className="tooltiptext">ReactJS</span>
-          </div>
-          <div className="tooltip skill_box">
-            <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">
-              <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" className="skill_icon" />
-            </a>
-            <span className="tooltiptext">TyeScript</span>
-          </div>
+          {
+            SkillsList.map((item) => {
+              return (
+                <div className="tooltip skill_box">
+                  <a href={item.link} target="_blank" rel="noreferrer">
+                    <img src={item.imageLink} alt={item.tooltip} className="skill_icon" />
+                  </a>
+                  <span className="tooltiptext">{item.tooltip}</span>
+                </div>
+              )
+            })
+          }
         </div>
       </div>
     </>
