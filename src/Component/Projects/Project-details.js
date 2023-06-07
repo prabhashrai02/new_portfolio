@@ -1,5 +1,12 @@
 export const ProjectList = [
     {
+        name: `GrowwMart`,
+        image: `https://user-images.githubusercontent.com/73634195/243904761-34b20b08-acf5-4200-87b6-f89f968fa396.png`,
+        tech_stack: `TypeScript, NextJs, ReactJs, HTML, CSS, JS`,
+        github_link: `https://github.com/prabhashrai02/growwmart`,
+        live_link: `https://growwmart-raiprabh-growwin.vercel.app/`,
+    },
+    {
         name: `Groww Feed App`,
         image: `https://user-images.githubusercontent.com/73634195/199815021-b4d0fef6-9b79-484f-adde-b9d5b3c32939.png`,
         tech_stack: `ReactJs, HTML, CSS, JS`,
@@ -32,7 +39,7 @@ export const ProjectList = [
         image: `https://user-images.githubusercontent.com/73634195/193598590-3ec24418-9795-404f-8cff-61fa127ef189.png`,
         tech_stack: `HTML, CSS, JS`,
         github_link: `https://github.com/prabhashrai02/intradayhelper`,
-        live_link: `https://prabhashrai02.github.io/intradayhelper/`,
+        live_link: `https://prabhashrai02.github.io/intradayhelperStatic/`,
     },
     {
         name: `Bank Manger View`,
