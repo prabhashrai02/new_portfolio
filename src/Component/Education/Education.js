@@ -15,12 +15,16 @@ const Education = () => {
             <h5 className="org_duration"> Jul 2019 - Present </h5>
           </div>
           <br/>
-          <p className="org_description"> Pursuing BE in Information Technology. CGPA : 8.3 (till 6th semester).</p>
+          <p className="org_description">
+            I hold a Bachelor's degree in Information Technology with a notable CGPA of 8.3.
+            This educational achievement highlights my dedication and proficiency in the field,
+            providing a strong foundation for my career as a Software engineer.
+          </p>
         </div>
 
         <div className="education_box">
           <div className="education_logo">
-            <img className="education_logo" src="https://upload.wikimedia.org/wikipedia/commons/4/47/Kendriya_Vidyalaya_logo.png?20181214053526" alt="Kendriya Vidyalaya"/>
+            <img className="education_logo" src="https://kvrodelhi.allsport.in/assets/homepage/img/logo.svg" alt="Kendriya Vidyalaya"/>
           </div>
           <div className="education_org">
             <h3 className="org_designation">Higher Secondary School</h3>
@@ -28,7 +32,9 @@ const Education = () => {
             <h5 className="org_duration">2018 - 2019</h5>
           </div>
           <br/>
-          <p className="org_description"> Studied with PCMB and secured 87% in AISSCE- 2019 examination of CBSE.</p>
+          <p className="org_description">
+            In the AISSCE-2019 examination conducted by CBSE, I studied under the PCMB stream and achieved score of 87%.
+            </p>
         </div>
       </div>
     </>
