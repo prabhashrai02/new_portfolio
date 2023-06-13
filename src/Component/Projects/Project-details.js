@@ -1,5 +1,19 @@
 export const ProjectList = [
     {
+        name: `TradingView Charting`,
+        image: `https://user-images.githubusercontent.com/73634195/245564815-fde4f238-9261-4988-8857-e9ff25461cc7.png`,
+        tech_stack: `TypeScript, NextJs, ReactJs, HTML, CSS, JS, Lightweight Charts`,
+        github_link: `https://github.com/prabhashrai02/algo-test-trading-chart`,
+        live_link: `https://algo-test-trading-chart.vercel.app/`,
+    },
+    {
+        name: `Custom Tooltip Component`,
+        image: `https://private-user-images.githubusercontent.com/73634195/245566224-7127f7db-75d8-4054-9df4-0b0d9f913725.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg2Njc5ODI1LCJuYmYiOjE2ODY2Nzk1MjUsInBhdGgiOiIvNzM2MzQxOTUvMjQ1NTY2MjI0LTcxMjdmN2RiLTc1ZDgtNDA1NC05ZGY0LTBiMGQ5ZjkxMzcyNS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBSVdOSllBWDRDU1ZFSDUzQSUyRjIwMjMwNjEzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDIzMDYxM1QxODA1MjVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03ZGVhZWIzN2QwMThhMmIwZThmMmEzYjc4MGM5MDc0Mjg3OGJiMWY4YzcwMWNmNWJlNTkzMTkxZDI3ZmYyYzI3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.z_wTshHZTwfGC0qd-6XIkoVkSWG0wg0E-6etrFvWiQ8`,
+        tech_stack: `TypeScript, NextJs, ReactJs, HTML, CSS, JS`,
+        github_link: `https://github.com/prabhashrai02/custom-tooltip`,
+        live_link: `https://custom-tooltip.vercel.app/`,
+    },
+    {
         name: `GrowwMart`,
         image: `https://user-images.githubusercontent.com/73634195/243904761-34b20b08-acf5-4200-87b6-f89f968fa396.png`,
         tech_stack: `TypeScript, NextJs, ReactJs, HTML, CSS, JS`,
