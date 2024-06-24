@@ -5,7 +5,7 @@ import PlaywithMe from './Component/PlaywithMe/PlaywithMe';
 import Skills from './Component/Skills/Skills';
 import Contact from './Component/Contact/Contact';
 import Projects from './Component/Projects/Projects';
-import Education from './Component/Education/Education';
+// import Education from './Component/Education/Education';
 import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
@@ -34,7 +34,7 @@ const App = () => {
           <Route exact path='/experience' element={<Experience />} />
           <Route exact path='/contact' element={<Contact />} />
           <Route exact path='/projects' element={<Projects />} />
-          <Route exact path='/education' element={<Education />} />
+          {/* <Route exact path='/education' element={<Education />} /> */}
           <Route path="*" element={<Navigate replace to="/home" />} />
         </Routes>
       </Router>

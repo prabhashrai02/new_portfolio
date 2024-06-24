@@ -1,13 +1,24 @@
 import { React, useState } from "react";
 import { Link } from "react-router-dom";
+import DayNightToggle from 'react-day-and-night-toggle';
 import { AiTwotoneHome, AiFillContacts } from "react-icons/ai";
 import { RiProjectorFill } from "react-icons/ri";
 import { SiRiotgames } from "react-icons/si";
 import { IoBookSharp } from "react-icons/io5";
 import { MdWork } from "react-icons/md";
 import { GiSkills } from "react-icons/gi";
-import DayNightToggle from 'react-day-and-night-toggle';
 import "./Navbar.css";
+
+
+const navItems = [
+  { name: 'Home', path: '/home', icon: AiTwotoneHome },
+  { name: 'Let\'s Play', path: '/challenge', icon: SiRiotgames },
+  { name: 'Skills', path: '/skills', icon: GiSkills },
+  // { name: 'Education', path: '/education', icon: IoBookSharp },
+  { name: 'Projects', path: '/projects', icon: RiProjectorFill },
+  { name: 'Experience', path: '/experience', icon: MdWork },
+  { name: 'Contact Me', path: '/contact', icon: AiFillContacts },
+];
 
 const close = () => {
   let chk = document.getElementById("nav-toggle");
@@ -20,7 +31,6 @@ function Navbar() {
   const [selectedTheme, setSelectedTheme] = useState('dark_theme');
 
   function changeTheme () {
-    
     setIsDarkMode(!isDarkMode);
 
     if (selectedTheme === 'light_theme') {
@@ -30,7 +40,6 @@ function Navbar() {
       setSelectedTheme('light_theme');
     }
 
-    // select theme for whole page from user input
     document.body.className = selectedTheme;
   }
 
@@ -49,62 +58,16 @@ function Navbar() {
           </div>
 
           <ul className="nav-list">
-            <li className="navigation__item">
-              <Link onClick={close} to="/home" className="navigation__link">
-                <span>
-                  <AiTwotoneHome id="/home" className="icon white-background" />
-                </span>
-                <span className="top"> Home </span>
-              </Link>
-            </li>
-            <li className="navigation__item">
-              <Link onClick={close} to="/challenge" className="navigation__link">
-                <span>
-                  <SiRiotgames id="/challenge" className="icon white-background"/>
-                </span>
-                <span> Let's Play </span>
-              </Link>
-            </li>
-            <li className="navigation__item">
-              <Link onClick={close} to="/skills" className="navigation__link">
-                <span>
-                  <GiSkills id="/skills" className="icon white-background" />
-                </span>
-                <span> Skills </span>
-              </Link>
-            </li>
-            <li className="navigation__item">
-              <Link onClick={close} to="/education" className="navigation__link">
-                <span>
-                  <IoBookSharp id="/education" className="icon white-background"/>
-                </span>
-                <span> Education </span>
-              </Link>
-            </li>
-            <li className="navigation__item">
-              <Link onClick={close} to="/projects" className="navigation__link">
-                <span>
-                  <RiProjectorFill id="/projects" className="icon white-background"/>
-                </span>
-                <span> Projects </span>
-              </Link>
-            </li>
-            <li className="navigation__item">
-              <Link onClick={close} to="/experience" className="navigation__link">
-                <span>
-                  <MdWork id="/experience" className="icon white-background" />
-                </span>
-                <span> Experience </span>
-              </Link>
-            </li>
-            <li className="navigation__item">
-              <Link onClick={close} to="/contact" className="navigation__link">
-                <span>
-                  <AiFillContacts id="/contact" className="icon white-background"/>
-                </span>
-                <span> Contact Me </span>
-              </Link>
-            </li>
+            {navItems.map((item, index) => (
+              <li key={index} className="navigation__item">
+                <Link onClick={close} to={item.path} className="navigation__link">
+                  <span>
+                    <item.icon id={item.path} className="icon white-background" />
+                  </span>
+                  <span className="top"> {item.name} </span>
+                </Link>
+              </li>
+            ))}
           </ul>
         </nav>
       </div>
